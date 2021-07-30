@@ -410,8 +410,8 @@
           <div class="row">
            
               <div>
-                <h1 style="font-family: 'Abel', sans-serif; padding-top:45px;">Companys</h1>
-                <button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;"> <i class="fas fa-folder-plus"></i>  Add Companys</span> </button>
+                <h1 style="font-family: 'Abel', sans-serif; padding-top:45px;">Locations</h1>
+                <button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;"> <i class="fas fa-folder-plus"></i>  Add locations</span> </button>
 
 
 <div style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -424,15 +424,23 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Company Id</label>
+            <label for="recipient-name" class="col-form-label">Location ID</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Company Name</label>
+            <label for="message-text" class="col-form-label">Location Name</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Company Location</label>
+            <label for="message-text" class="col-form-label">Company ID</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div> 
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Address</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">City</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
         </form>
@@ -456,10 +464,11 @@
                     <thead>
                       <tr>
                         <th scope="col">S.No</th>
-                        <th scope="col">Company Name</th>
-                        <th scope="col">Company Id</th>
-                        <th scope="col">Email ID</th>
-                        <th scope="col">Phone Number</th>
+                        <th scope="col">Location Name</th>
+                        <th scope="col">Location ID</th>
+                        <th scope="col">Company ID</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">City</th>
                         <th scope="col">Created On</th>
                         <th scope="col">Action</th>
                       </tr>
@@ -467,46 +476,51 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Github</td>
+                        <td>San francisco</td>
+                        <td>LOC-12345</td>
                         <td>GT-000123</td>
-                        <td>GIT@mail.com</td>
-                        <td>+91-9876543210</td>
+                        <td>San Francisco, California, United States</td>
+                        <td >California</td>
                         <td >2008</td>
                         <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Orkut</td>
+                        <td>Mountain View</td>
+                        <td>LOC-12345</td>
                         <td>OT-000124</td>
-                        <td>Orkut@mail.com</td>
-                        <td>+91-9876543210</td>
+                        <td>Mountain View, California, United States</td>
+                        <td>California</td>
                         <td>2004</td>
                         <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Msn</td>
+                        <td>Redmond</td>
+                        <td>LOC-12345</td>
                         <td>MN-000125</td>
-                        <td>MSN@mail.com</td>
-                        <td>+91-9876543210</td>
+                        <td>Redmond, WA, US</td>
+                        <td>WA</td>
                         <td>1995</td>
                         <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
                       </tr> 
                       <tr>
                         <th scope="row">4</th>
-                        <td>Twitter</td>
+                        <td>San Francisco</td>
+                        <td>LOC-12345</td>
                         <td>TR-000126</td>
-                        <td>Twitter@mail.com</td>
-                        <td>+91-9876543210</td>
+                        <td>San Francisco, California, United States</td>
+                        <td>California</td>
                         <td>2006</td> 
                         <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
                       </tr>
                        <tr>
                         <th scope="row">5</th>
-                        <td>Facebook</td>
+                        <td>Menlo Park</td>
+                        <td>LOC-12345</td>
                         <td>FB-000127</td>
-                        <td>FB@mail.com</td>
-                        <td>+91-9876543210</td>
+                        <td> Menlo Park, California, United States</td>
+                        <td>California</td>
                         <td>2004</td>
                         <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
                         

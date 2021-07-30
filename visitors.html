@@ -101,13 +101,13 @@
     <div id="collapseOne" class="accordion-collapse Z" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body" style="background-color: #FBFAFF;">
         <div class="container">
-          <ul>
-            <li><a href="location.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Location</span></a></li>
-            <li><a href="Security.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Security</span></a></li>
-            <li><a href="visitors.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Visitor</span></a></li>
-            <li><a href="#" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">My Account</span></a></li>
-           
-          </ul>
+            <ul>
+                <li><a href="location.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Location</span></a></li>
+                <li><a href="Security.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Security</span></a></li>
+                <li><a href="visitors.html" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">Visitor</span></a></li>
+                <li><a href="#" style="color:gray; text-decoration:none;"><span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;">My Account</span></a></li>
+               
+              </ul>
         </div>
       </div>
     </div>
@@ -410,8 +410,8 @@
           <div class="row">
            
               <div>
-                <h1 style="font-family: 'Abel', sans-serif; padding-top:45px;">Companys</h1>
-                <button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;"> <i class="fas fa-folder-plus"></i>  Add Companys</span> </button>
+                <h1 style="font-family: 'Abel', sans-serif; padding-top:45px;">visitors</h1>
+                <button type="button" class="btn btn-secondary float-end" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> <span style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;"> <i class="fas fa-folder-plus"></i>  Add Visitors</span> </button>
 
 
 <div style="font-family: 'Abel', sans-serif; font-size:16px; font-weight:500;padding-left:8px;" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -424,15 +424,47 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Company Id</label>
+            <label for="recipient-name" class="col-form-label">Visitor ID</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Company Name</label>
+            <label for="message-text" class="col-form-label">Visitor Name</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Company Location</label>
+            <label for="message-text" class="col-form-label">Phone Number</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div> 
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">ID proof</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">ID Number</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div> 
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Address</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Purpose</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">In Time</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Company ID</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+           <div class="mb-3">
+            <label for="message-text" class="col-form-label">Location ID</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Security ID</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
         </form>
@@ -456,60 +488,91 @@
                     <thead>
                       <tr>
                         <th scope="col">S.No</th>
-                        <th scope="col">Company Name</th>
-                        <th scope="col">Company Id</th>
-                        <th scope="col">Email ID</th>
+                        <th scope="col">Visitor ID</th>
+                        <th scope="col">Visitor Name</th>
                         <th scope="col">Phone Number</th>
-                        <th scope="col">Created On</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">ID Proof Type</th>
+                        <th scope="col">ID Number</th>
+                        <th scope="col">Address</th>
+                        <th scope="col">Purpose</th>
+                        <th scope="col">In Time</th>
+                        <th scope="col">Company ID</th>
+                        <th scope="col">Location ID</th>
+                        <th scope="col">Security ID</th>
+                       
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>Github</td>
-                        <td>GT-000123</td>
-                        <td>GIT@mail.com</td>
-                        <td>+91-9876543210</td>
-                        <td >2008</td>
-                        <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
+                        <td>Visitor-001</td>
+                        <td>Name-01</td>
+                        <td>9876543210</td>
+                        <td>Passport Copy</td>
+                        <td >12345  </td>
+                        <td >IND</td>
+                        <td >GUST</td>
+                        <td >12:00:AM</td>
+                        <td >001</td>
+                        <td >LOC_001</td>
+                        <td >123</td>
+                       
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>Orkut</td>
-                        <td>OT-000124</td>
-                        <td>Orkut@mail.com</td>
-                        <td>+91-9876543210</td>
-                        <td>2004</td>
-                        <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
+                        <td>Visitor-002</td>
+                        <td>Name-02</td>
+                        <td>9876543210</td>
+                        <td>Passport Copy</td>
+                        <td >12345  </td>
+                        <td >IND</td>
+                        <td >GUST</td>
+                        <td >12:00:AM</td>
+                        <td >002</td>
+                        <td >LOC_002</td>
+                        <td >123</td>
                       </tr>
                       <tr>
                         <th scope="row">3</th>
-                        <td>Msn</td>
-                        <td>MN-000125</td>
-                        <td>MSN@mail.com</td>
-                        <td>+91-9876543210</td>
-                        <td>1995</td>
-                        <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
-                      </tr> 
+                        <td>Visitor-003</td>
+                        <td>Name-03</td>
+                        <td>9876543210</td>
+                        <td>Passport Copy</td>
+                        <td >12345  </td>
+                        <td >IND</td>
+                        <td >GUST</td>
+                        <td >12:00:AM</td>
+                        <td >003</td>
+                        <td >LOC_003</td>
+                        <td >123</td>
+                      </tr>
                       <tr>
                         <th scope="row">4</th>
-                        <td>Twitter</td>
-                        <td>TR-000126</td>
-                        <td>Twitter@mail.com</td>
-                        <td>+91-9876543210</td>
-                        <td>2006</td> 
-                        <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
+                        <td>Visitor-004</td>
+                        <td>Name-04</td>
+                        <td>9876543210</td>
+                        <td>Passport Copy</td>
+                        <td >12345  </td>
+                        <td >IND</td>
+                        <td >GUST</td>
+                        <td >12:00:AM</td>
+                        <td >004</td>
+                        <td >LOC_004</td>
+                        <td >123</td>
                       </tr>
-                       <tr>
+                      <tr>
                         <th scope="row">5</th>
-                        <td>Facebook</td>
-                        <td>FB-000127</td>
-                        <td>FB@mail.com</td>
-                        <td>+91-9876543210</td>
-                        <td>2004</td>
-                        <td><a style="text-decoration: none;" href=""><i style="color:black;" class="fas fa-pencil-alt text-muted"></i> <a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-trash-alt text-muted"></i> </a><a style="text-decoration: none;" href=""><i  style="color:black; padding-left:15px;" class="fas fa-ellipsis-v text-muted"></i> </a> </a> </td>
-                        
+                        <td>Visitor-005</td>
+                        <td>Name-05</td>
+                        <td>9876543210</td>
+                        <td>Passport Copy</td>
+                        <td >12345  </td>
+                        <td >IND</td>
+                        <td >GUST</td>
+                        <td >12:00:AM</td>
+                        <td >005</td>
+                        <td >LOC_005</td>
+                        <td >123</td>
                       </tr>
                     </tbody>
                   </table>
